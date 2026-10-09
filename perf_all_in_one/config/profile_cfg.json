@@ -1,0 +1,30 @@
+{
+  "version": "2021/3/3",
+  "systrace": {
+    "ignore_event": [
+      "bionic",
+      "perf",
+      "pdx",
+      "irqoff",
+      "preemptoff"
+    ],
+    "buffer_size_ratio": 2048,
+    "debug_pkg": "com.android.launcher",
+    "screenrecord": false,
+    "dump_pkgs": false,
+    "dump_meminfo": false,
+    "dump_logcat": true,
+    "dump_ps": false,
+    "enhance": false,
+    "light_mode": false,
+    "event_tag": "freq idle am wm gfx view binder_driver binder_lock hal dalvik camera input res memory webview audio video"
+  },
+  "light_perfetto": {
+    "event_tag": "gfx input view webview wm am sched freq idle binder_driver binder_lock dalvik ss sm audio video camera hal res rs power pm database network rro disk sync memreclaim memory",
+    "buffer": "500mb",
+    "unit": "s"
+  },
+  "output_dir_name": "output",
+  "need_new_folder": false,
+  "perfetto_convert_lib_path": "X:/android_liuyun/git/perfetto2systrace"
+}

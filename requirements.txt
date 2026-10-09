@@ -1,0 +1,11 @@
+# 建议使用 Python 3.10+（Flet 0.8x）
+flet>=0.80.0
+# 调试：环境变量 TEST_TOOL_FLET_DEBUG=1 时，ADB 定时刷新异常会打印到控制台（python 运行或带控制台的 exe）
+# 打包 exe：py -m pip install PyInstaller；需存在 test_tool_flet\scrcpy-win64-v2.7\scrcpy.exe（投屏）
+#   - 单文件：打包为exe.bat（启动会解压临时目录，首启偏慢）
+#   - 目录版：打包为exe_目录版.bat（--onedir，启动更快，需分发整个 dist\test_tool_flet 文件夹）
+ttkbootstrap>=1.10.0
+pygetwindow>=0.0.9
+pyperclip>=1.8.0
+psutil>=5.9.0
+Pillow>=9.0.0
